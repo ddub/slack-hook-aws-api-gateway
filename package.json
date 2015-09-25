@@ -1,0 +1,19 @@
+{
+  "name": "slack-hook-aws-api-gateway",
+  "version": "0.0.1",
+  "description": "Utility library to aid the development of slack webhooks in Amazon API Gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddub/slack-hook-aws-api-gateway.git"
+  },
+  "author": "Duncan Ward <git@dub.to> (http://dub.to)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddub/slack-hook-aws-api-gateway/issues"
+  },
+  "homepage": "https://github.com/ddub/slack-hook-aws-api-gateway#readme"
+}
