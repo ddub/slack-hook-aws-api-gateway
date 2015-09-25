@@ -1,6 +1,6 @@
 {
   "name": "slack-hook-aws-api-gateway",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utility library to aid the development of slack webhooks in Amazon API Gateway",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ddub/slack-hook-aws-api-gateway/issues"
   },
-  "homepage": "https://github.com/ddub/slack-hook-aws-api-gateway#readme"
+  "homepage": "https://github.com/ddub/slack-hook-aws-api-gateway#readme",
+  "dependencies": {
+    "q": "^1.4.1"
+  }
 }
