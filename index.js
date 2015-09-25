@@ -68,6 +68,8 @@ var wrange_message = function(event, context, callback) {
   if (!('post' in event)) context.fail('No message?');
   trigger = decompose_post(event.post);
   load_token().then(function(token) {
+    console.log('trigger is '+trigger.token);
+    console.log('tri is '+token);
     if (token != trigger.token) {
       context.fail('Auth fail');
     } else {
