@@ -1,6 +1,6 @@
 {
   "name": "slack-hook-aws-api-gateway",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Utility library to aid the development of slack webhooks in Amazon API Gateway",
   "main": "index.js",
   "scripts": {

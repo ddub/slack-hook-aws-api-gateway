@@ -33,7 +33,7 @@ function decompose_post(post) {
   for (var i = 0; i < params.length; i++)
   {
     kv = params[i].split('=');
-    obj[decodeURIComponent(kv[0])]=decodeURIComponent(kv[1].replace('+', ' '));
+    obj[decodeURIComponent(kv[0])]=decodeURIComponent(kv[1].replace(/+/g, ' '));
   }
   return obj;
 }
