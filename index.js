@@ -1,8 +1,6 @@
 var AWS = require('aws-sdk'),
      fs = require('fs'),
-      q = require('q'),
- config = require('./slack-config');
-
+      q = require('q');
 /*
    takes the post property which is passed by the input mapping as a js encoded
    post body.
@@ -42,11 +40,8 @@ function decompose_post(post) {
 
 function load_token() {
   var deferred = q.defer();
-  kms_opts = {}
-  if ('region' in config) kms_opts['region'] = config.region;
-  var kms = new AWS.KMS(kms_opts);
+  var kms = new AWS.KMS();
   var encrypted_file = './slack-token';
-  if ('token' in config) encrypted_file = config.token;
   fs.stat(encrypted_file, function(err, file_info) {
     if (err != null) {
       deferred.reject('No encrypted file:'+err.code)
